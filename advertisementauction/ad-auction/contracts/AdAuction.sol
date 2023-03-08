@@ -28,7 +28,6 @@ contract AdAuction {
         require(msg.value > currentAd.currentHighestBid, "Bid amount is too low.");
         
         address payable currentHighestBidder = payable(currentAd.currentHighestBidder);        currentAd.currentHighestBidder = msg.sender;
-        currentAd.currentHighestBidder = msg.sender;
         currentAd.currentHighestBid = msg.value;
         currentAd.imageLink = _imageLink;
         currentAd.text = _text;

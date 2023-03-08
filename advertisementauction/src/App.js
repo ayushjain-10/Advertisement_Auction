@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <AdAuctionComponent />
     </div>
+    
   );
 }
 
